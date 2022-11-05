@@ -114,6 +114,9 @@
       "density": 0.005,
       "height": 0.05,
       "timeScale": 1
+    },
+    "xr": {
+      "dollhouse": "auto"
     }
   },
   "entities": {
@@ -134,7 +137,8 @@
             "rotation": {
               "x": 0,
               "y": 0,
-              "z": 0
+              "z": 0,
+              "w": 1
             },
             "scale": {
               "x": 1,
@@ -184,7 +188,8 @@
             "rotation": {
               "x": 0,
               "y": 0,
-              "z": 0
+              "z": 0,
+              "w": 1
             },
             "scale": {
               "x": 1,
@@ -215,7 +220,8 @@
             "rotation": {
               "x": 0,
               "y": 0,
-              "z": 0
+              "z": 0,
+              "w": 1
             },
             "scale": {
               "x": 1,
@@ -264,7 +270,8 @@
             "rotation": {
               "x": 0,
               "y": 0,
-              "z": 0
+              "z": 0,
+              "w": 1
             },
             "scale": {
               "x": 1,
@@ -280,8 +287,7 @@
         {
           "name": "ground-plane",
           "props": {
-            "color": 8311585,
-            "generateNavmesh": false
+            "color": 8311585
           }
         },
         {
@@ -307,9 +313,10 @@
               "z": 0
             },
             "rotation": {
-              "x": -3.141592653589793,
-              "y": 1.2246468525851686e-16,
-              "z": -3.1415926535897922
+              "x": -5.053215498074303e-16,
+              "y": -1,
+              "z": -6.12323399573677e-17,
+              "w": -6.123234262925839e-17
             },
             "scale": {
               "x": 1,
@@ -346,7 +353,8 @@
             "rotation": {
               "x": 0,
               "y": 0,
-              "z": 0
+              "z": 0,
+              "w": 1
             },
             "scale": {
               "x": 1,
@@ -383,9 +391,10 @@
               "z": 0
             },
             "rotation": {
-              "x": 0.5235987826331087,
-              "y": 0.609119929255003,
-              "z": 2.604002372320199e-9
+              "x": 0.24690793740359293,
+              "y": 0.28965548016032816,
+              "z": 0.07761295437009141,
+              "w": 0.9214729527089438
             },
             "scale": {
               "x": 1,
@@ -414,6 +423,44 @@
       "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
       "index": 5,
       "name": "directional light"
+    },
+    "e44188d5-e17a-4f0a-bf89-5f0047de0e2e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "system",
+          "props": {
+            "filePath": "__$project$__/vps-summit/src/systems/SceneSystem.ts",
+            "systemUpdateType": "UPDATE",
+            "enableClient": true,
+            "enableServer": true,
+            "args": ""
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 6,
+      "name": "System"
     }
   },
   "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
