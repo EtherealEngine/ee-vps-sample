@@ -1,0 +1,674 @@
+{
+  "version": 0,
+  "metadata": {
+    "postprocessing": {
+      "enabled": true,
+      "effects": {
+        "SMAAEffect": {
+          "isActive": true,
+          "blendFunction": 13,
+          "preset": 1,
+          "edgeDetectionMode": 2,
+          "predicationMode": 0
+        },
+        "OutlineEffect": {
+          "isActive": true,
+          "blendFunction": 16,
+          "patternTexture": null,
+          "edgeStrength": 1,
+          "pulseSpeed": 0,
+          "visibleEdgeColor": 16777215,
+          "hiddenEdgeColor": 16777215,
+          "resolutionScale": 0.5,
+          "width": -1,
+          "height": -1,
+          "kernelSize": 0,
+          "blur": false,
+          "xRay": true
+        },
+        "SSAOEffect": {
+          "isActive": false,
+          "blendFunction": 10,
+          "distanceScaling": true,
+          "depthAwareUpsampling": true,
+          "samples": 16,
+          "rings": 7,
+          "distanceThreshold": 0.125,
+          "distanceFalloff": 0.02,
+          "minRadiusScale": 1,
+          "bias": 0.25,
+          "radius": 0.01,
+          "intensity": 2,
+          "fade": 0.05
+        },
+        "DepthOfFieldEffect": {
+          "isActive": false,
+          "blendFunction": 13,
+          "focusDistance": 0.02,
+          "focalLength": 0.5,
+          "bokehScale": 1
+        },
+        "BloomEffect": {
+          "isActive": true,
+          "blendFunction": 16,
+          "kernelSize": 2,
+          "luminanceThreshold": 1,
+          "luminanceSmoothing": 0.1,
+          "intensity": 0.2
+        },
+        "ToneMappingEffect": {
+          "isActive": false,
+          "blendFunction": 13,
+          "adaptive": true,
+          "resolution": 512,
+          "middleGrey": 0.6,
+          "maxLuminance": 32,
+          "averageLuminance": 1,
+          "adaptationRate": 2
+        },
+        "BrightnessContrastEffect": {
+          "isActive": false,
+          "brightness": 0.05,
+          "contrast": 0.1
+        },
+        "HueSaturationEffect": {
+          "isActive": false,
+          "hue": 0,
+          "saturation": -0.15
+        },
+        "ColorDepthEffect": {
+          "isActive": false,
+          "bits": 16
+        },
+        "LinearTosRGBEffect": {
+          "isActive": false
+        }
+      }
+    },
+    "mediaSettings": {
+      "immersiveMedia": false,
+      "refDistance": 20,
+      "rolloffFactor": 1,
+      "maxDistance": 10000,
+      "distanceModel": "linear",
+      "coneInnerAngle": 360,
+      "coneOuterAngle": 0,
+      "coneOuterGain": 0
+    },
+    "renderSettings": {
+      "LODs": {
+        "x": 5,
+        "y": 15,
+        "z": 30
+      },
+      "csm": true,
+      "toneMapping": 1,
+      "toneMappingExposure": 0.8,
+      "shadowMapType": 2
+    },
+    "fog": {
+      "type": "linear",
+      "color": 16777215,
+      "near": 1,
+      "far": 200,
+      "density": 0.005,
+      "height": 0.05,
+      "timeScale": 1
+    },
+    "xr": {
+      "dollhouse": "auto"
+    }
+  },
+  "entities": {
+    "d32b1c4e-d08e-4fb0-9107-4c88a281ee71": {
+      "components": [
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "envmapbake",
+          "props": {
+            "bakeType": "Baked",
+            "resolution": 2048,
+            "refreshMode": "OnAwake",
+            "envMapOrigin": "__$project$__/EE-Project-VPS-Sample/main.envmap.png",
+            "boxProjection": true,
+            "bakePosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakePositionOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakeScale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "bb362197-f14d-4da7-9c3c-1ed834386423": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "e7d6bfb1-6390-4a8b-b744-da83b059c2d3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 0,
+            "equirectangularPath": "",
+            "cubemapPath": "__$project$__/default-project/assets/skyboxsun25deg/",
+            "backgroundType": 1,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.16666666666666666
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 1,
+      "name": "skybox"
+    },
+    "38793f94-0b92-4ea1-af7b-5ec0e117628d": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": -2.429984687953498,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "ground-plane",
+          "props": {
+            "color": 8311585
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 2,
+      "name": "ground plane"
+    },
+    "3e8a430e-9dcf-440e-990c-44ecb8051762": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": -5.053215498074303e-16,
+              "y": -1,
+              "z": -6.12323399573677e-17,
+              "w": -6.123234262925839e-17
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "spawn-point",
+          "props": {
+            "permissionedUsers": []
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 3,
+      "name": "spawn point"
+    },
+    "f77dc4c6-c9a6-433d-8102-4a9a8e1c0ce9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 4,
+      "name": "hemisphere light"
+    },
+    "cb045cfd-8daf-4a2b-b764-35625be54a11": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0.24690793740359293,
+              "y": 0.28965548016032816,
+              "z": 0.07761295437009141,
+              "w": 0.9214729527089438
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 16777215,
+            "intensity": 1,
+            "castShadow": true,
+            "shadowMapResolution": [
+              512,
+              512
+            ],
+            "shadowBias": -0.00001,
+            "shadowRadius": 1,
+            "cameraFar": 2000,
+            "useInCSM": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 5,
+      "name": "directional light"
+    },
+    "e44188d5-e17a-4f0a-bf89-5f0047de0e2e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "system",
+          "props": {
+            "filePath": "__$project$__/vps-summit/src/systems/SceneSystem.ts",
+            "systemUpdateType": "UPDATE",
+            "enableClient": true,
+            "enableServer": true,
+            "args": ""
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 6,
+      "name": "System"
+    },
+    "aa77380c-a1ab-4e72-9839-dbb2b325bd19": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 5.2014375762649285,
+              "y": -0.6260501036823343,
+              "z": 3.2242942242992965
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 0.020000000000000018,
+              "y": 0.020000000000000018,
+              "z": 0.020000000000000018
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/Skybase.glb",
+            "generateBVH": false,
+            "matrixAutoUpdate": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 7,
+      "name": "Model"
+    },
+    "19670123-ae0e-4413-9c19-36be64a2a99f": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -0.035409457239390374,
+              "y": 5.0518936822928815,
+              "z": 9.988969869737854
+            },
+            "rotation": {
+              "x": -0.12155613039607414,
+              "y": 0.02387310466034866,
+              "z": 0.002924460700212886,
+              "w": 0.9922931167586629
+            },
+            "scale": {
+              "x": 1,
+              "y": 0.9999999999999999,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 8,
+      "name": "entity-8"
+    },
+    "e627e827-5b2e-46ce-848d-4e0bdfc2a8b5": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/EE-Project-VPS-Sample/assets/piano.glb",
+            "generateBVH": false,
+            "matrixAutoUpdate": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 9,
+      "name": "Model 2"
+    },
+    "113313b9-c11b-43aa-b8c2-724f38f450f9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0.9604772441482308,
+              "y": 0.3849780090372066,
+              "z": 4.918268227087667
+            },
+            "rotation": {
+              "x": -0.10084664134748858,
+              "y": -0.5217421817541289,
+              "z": -0.062279832051777416,
+              "w": 0.8448291384812523
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 10,
+      "name": "entity-10"
+    },
+    "e5adcc7f-2d8b-4cf5-9deb-f224735a04eb": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 2.849833115362013,
+              "y": 0.16329605848512138,
+              "z": 5.226270505810987
+            },
+            "rotation": {
+              "x": -0.15787081877176232,
+              "y": -0.40889722832058306,
+              "z": -0.07205141593646437,
+              "w": 0.8959288223478632
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 11
+    }
+  },
+  "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
+}
