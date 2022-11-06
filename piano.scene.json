@@ -116,7 +116,8 @@
       "timeScale": 1
     },
     "xr": {
-      "dollhouse": "auto"
+      "dollhouse": "auto",
+      "vpsWayspotName": "piano"
     }
   },
   "entities": {
@@ -153,7 +154,7 @@
             "bakeType": "Baked",
             "resolution": 2048,
             "refreshMode": "OnAwake",
-            "envMapOrigin": "__$project$__/ee-vps-sample/main.envmap.png",
+            "envMapOrigin": "__$project$__/ee-vps-sample/piano.envmap.png",
             "boxProjection": true,
             "bakePosition": {
               "x": 0,
@@ -667,7 +668,35 @@
         }
       ],
       "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
-      "index": 11
+      "index": 11,
+      "name": "entity-11"
+    },
+    "bd526946-e032-4a89-8402-2ead63a4ef15": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -8.881784197001252e-16,
+              "y": 5,
+              "z": 10
+            },
+            "rotation": {
+              "x": -0.2277762376987347,
+              "y": -0.3858762816244943,
+              "z": -0.09892344627543272,
+              "w": 0.8884996525584324
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 12
     }
   },
   "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
