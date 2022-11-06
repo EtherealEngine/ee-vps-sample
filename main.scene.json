@@ -450,7 +450,7 @@
         {
           "name": "system",
           "props": {
-            "filePath": "__$project$__/EE-Project-VPS-Sample/src/systems/SceneSystem.ts",
+            "filePath": "__$project$__/ee-vps-sample/src/systems/SceneSystem.ts",
             "systemUpdateType": "UPDATE",
             "enableClient": true,
             "enableServer": true,
