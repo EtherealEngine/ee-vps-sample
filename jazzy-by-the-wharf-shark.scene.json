@@ -478,6 +478,13 @@
             "activeClipIndex": -1,
             "hasAvatarAnimations": false
           }
+        },
+        {
+          "name": "persistent-anchor",
+          "props": {
+            "name": "wharf-shark",
+            "wireframe": false
+          }
         }
       ],
       "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
