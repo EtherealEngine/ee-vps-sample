@@ -421,44 +421,6 @@
       "index": 5,
       "name": "directional light"
     },
-    "e44188d5-e17a-4f0a-bf89-5f0047de0e2e": {
-      "components": [
-        {
-          "name": "transform",
-          "props": {
-            "position": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "rotation": {
-              "x": 0,
-              "y": 0,
-              "z": 0,
-              "w": 1
-            },
-            "scale": {
-              "x": 1,
-              "y": 1,
-              "z": 1
-            }
-          }
-        },
-        {
-          "name": "system",
-          "props": {
-            "filePath": "__$project$__/ee-vps-sample/src/systems/SceneSystem.ts",
-            "systemUpdateType": "UPDATE",
-            "enableClient": true,
-            "enableServer": true,
-            "args": ""
-          }
-        }
-      ],
-      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
-      "index": 6,
-      "name": "System"
-    },
     "aa77380c-a1ab-4e72-9839-dbb2b325bd19": {
       "components": [
         {
