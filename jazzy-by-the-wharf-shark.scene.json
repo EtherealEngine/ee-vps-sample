@@ -530,6 +530,7 @@
           "props": {
             "controls": false,
             "autoplay": true,
+            "paused": false,
             "paths": [
               "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
               "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
