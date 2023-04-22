@@ -1,124 +1,5 @@
 {
   "version": 0,
-  "metadata": {
-    "postprocessing": {
-      "enabled": true,
-      "effects": {
-        "SMAAEffect": {
-          "isActive": true,
-          "blendFunction": 13,
-          "preset": 1,
-          "edgeDetectionMode": 2,
-          "predicationMode": 0
-        },
-        "OutlineEffect": {
-          "isActive": true,
-          "blendFunction": 16,
-          "patternTexture": null,
-          "edgeStrength": 1,
-          "pulseSpeed": 0,
-          "visibleEdgeColor": 16777215,
-          "hiddenEdgeColor": 16777215,
-          "resolutionScale": 0.5,
-          "width": -1,
-          "height": -1,
-          "kernelSize": 0,
-          "blur": false,
-          "xRay": true
-        },
-        "SSAOEffect": {
-          "isActive": false,
-          "blendFunction": 10,
-          "distanceScaling": true,
-          "depthAwareUpsampling": true,
-          "samples": 16,
-          "rings": 7,
-          "distanceThreshold": 0.125,
-          "distanceFalloff": 0.02,
-          "minRadiusScale": 1,
-          "bias": 0.25,
-          "radius": 0.01,
-          "intensity": 2,
-          "fade": 0.05
-        },
-        "DepthOfFieldEffect": {
-          "isActive": false,
-          "blendFunction": 13,
-          "focusDistance": 0.02,
-          "focalLength": 0.5,
-          "bokehScale": 1
-        },
-        "BloomEffect": {
-          "isActive": true,
-          "blendFunction": 16,
-          "kernelSize": 2,
-          "luminanceThreshold": 1,
-          "luminanceSmoothing": 0.1,
-          "intensity": 0.2
-        },
-        "ToneMappingEffect": {
-          "isActive": false,
-          "blendFunction": 13,
-          "adaptive": true,
-          "resolution": 512,
-          "middleGrey": 0.6,
-          "maxLuminance": 32,
-          "averageLuminance": 1,
-          "adaptationRate": 2
-        },
-        "BrightnessContrastEffect": {
-          "isActive": false,
-          "brightness": 0.05,
-          "contrast": 0.1
-        },
-        "HueSaturationEffect": {
-          "isActive": false,
-          "hue": 0,
-          "saturation": -0.15
-        },
-        "ColorDepthEffect": {
-          "isActive": false,
-          "bits": 16
-        },
-        "LinearTosRGBEffect": {
-          "isActive": false
-        }
-      }
-    },
-    "mediaSettings": {
-      "immersiveMedia": false,
-      "refDistance": 20,
-      "rolloffFactor": 1,
-      "maxDistance": 10000,
-      "distanceModel": "linear",
-      "coneInnerAngle": 360,
-      "coneOuterAngle": 0,
-      "coneOuterGain": 0
-    },
-    "renderSettings": {
-      "LODs": {
-        "x": 5,
-        "y": 15,
-        "z": 30
-      },
-      "csm": true,
-      "toneMapping": 1,
-      "toneMappingExposure": 0.8,
-      "shadowMapType": 2
-    },
-    "fog": {
-      "type": "disabled",
-      "color": 16777215,
-      "near": 1,
-      "far": 200,
-      "density": 0.005,
-      "height": 0.05,
-      "timeScale": 1
-    },
-    "xr": {
-      "dollhouse": "auto"
-    }
-  },
   "entities": {
     "d32b1c4e-d08e-4fb0-9107-4c88a281ee71": {
       "components": [
@@ -150,11 +31,6 @@
         {
           "name": "envmapbake",
           "props": {
-            "bakeType": "Baked",
-            "resolution": 2048,
-            "refreshMode": "OnAwake",
-            "envMapOrigin": "__$project$__/ee-vps-sample/jazzy-by-the-wharf-shark.envmap.png",
-            "boxProjection": true,
             "bakePosition": {
               "x": 0,
               "y": 0,
@@ -169,7 +45,133 @@
               "x": 1,
               "y": 1,
               "z": 1
+            },
+            "bakeType": "Baked",
+            "resolution": 2048,
+            "refreshMode": "OnAwake",
+            "envMapOrigin": "__$project$__/ee-vps-sample/jazzy-by-the-wharf-shark.envmap.png",
+            "boxProjection": true
+          }
+        },
+        {
+          "name": "postprocessing",
+          "props": {
+            "enabled": true,
+            "effects": {
+              "SMAAEffect": {
+                "isActive": true,
+                "blendFunction": 13,
+                "preset": 1,
+                "edgeDetectionMode": 2,
+                "predicationMode": 0
+              },
+              "OutlineEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "patternTexture": null,
+                "edgeStrength": 1,
+                "pulseSpeed": 0,
+                "visibleEdgeColor": 16777215,
+                "hiddenEdgeColor": 16777215,
+                "resolutionScale": 0.5,
+                "width": -1,
+                "height": -1,
+                "kernelSize": 0,
+                "blur": false,
+                "xRay": true
+              },
+              "SSAOEffect": {
+                "isActive": false,
+                "blendFunction": 10,
+                "distanceScaling": true,
+                "depthAwareUpsampling": true,
+                "samples": 16,
+                "rings": 7,
+                "distanceThreshold": 0.125,
+                "distanceFalloff": 0.02,
+                "minRadiusScale": 1,
+                "bias": 0.25,
+                "radius": 0.01,
+                "intensity": 2,
+                "fade": 0.05
+              },
+              "DepthOfFieldEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "focusDistance": 0.02,
+                "focalLength": 0.5,
+                "bokehScale": 1
+              },
+              "BloomEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "kernelSize": 2,
+                "luminanceThreshold": 1,
+                "luminanceSmoothing": 0.1,
+                "intensity": 0.2
+              },
+              "ToneMappingEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "adaptive": true,
+                "resolution": 512,
+                "middleGrey": 0.6,
+                "maxLuminance": 32,
+                "averageLuminance": 1,
+                "adaptationRate": 2
+              },
+              "BrightnessContrastEffect": {
+                "isActive": false,
+                "brightness": 0.05,
+                "contrast": 0.1
+              },
+              "HueSaturationEffect": {
+                "isActive": false,
+                "hue": 0,
+                "saturation": -0.15
+              },
+              "ColorDepthEffect": {
+                "isActive": false,
+                "bits": 16
+              },
+              "LinearTosRGBEffect": {
+                "isActive": false
+              }
             }
+          }
+        },
+        {
+          "name": "media-settings",
+          "props": {
+            "immersiveMedia": false,
+            "refDistance": 20,
+            "rolloffFactor": 1,
+            "maxDistance": 10000,
+            "distanceModel": "linear",
+            "coneInnerAngle": 360,
+            "coneOuterAngle": 0,
+            "coneOuterGain": 0
+          }
+        },
+        {
+          "name": "render-settings",
+          "props": {
+            "csm": true,
+            "toneMapping": 1,
+            "toneMappingExposure": 0.8,
+            "shadowMapType": 2
+          }
+        },
+        {
+          "name": "fog",
+          "props": {
+            "type": "linear",
+            "color": "#FFFFFF",
+            "density": 0.005,
+            "near": 1,
+            "far": 200,
+            "timeScale": 1,
+            "height": 0.05
           }
         }
       ],
@@ -283,7 +285,8 @@
         {
           "name": "ground-plane",
           "props": {
-            "color": 8311585
+            "color": 8311585,
+            "visible": true
           }
         },
         {
@@ -404,14 +407,11 @@
           "props": {
             "color": 16777215,
             "intensity": 1,
+            "cameraFar": 2000,
             "castShadow": true,
-            "shadowMapResolution": [
-              512,
-              512
-            ],
+            "shadowMapResolution": 512,
             "shadowBias": -0.00001,
             "shadowRadius": 1,
-            "cameraFar": 2000,
             "useInCSM": true
           }
         }
@@ -458,8 +458,9 @@
           "name": "gltf-model",
           "props": {
             "src": "__$project$__/ee-vps-sample/assets/wharf-shark.glb",
+            "resource": null,
             "generateBVH": false,
-            "matrixAutoUpdate": false
+            "avoidCameraOcclusion": false
           }
         },
         {
@@ -529,17 +530,40 @@
           "name": "media",
           "props": {
             "controls": false,
-            "autoplay": true,
             "paused": false,
-            "paths": [
-              "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/dallas.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/biglatto_bigenergy.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/zion_lvnu_low.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/aya.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/bones.mp4"
+            "paths": [],
+            "resources": [
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/dallas.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/biglatto_bigenergy.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/zion_lvnu_low.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/aya.mp4",
+                "mediaType": "video"
+              },
+              {
+                "path": "https://resources-dev.etherealengine.com/volumetric/bones.mp4",
+                "mediaType": "video"
+              }
             ],
+            "volume": 1,
+            "synchronize": true,
             "playMode": "loop",
             "isMusic": false
           }
