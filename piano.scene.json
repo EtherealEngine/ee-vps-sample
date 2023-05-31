@@ -201,7 +201,7 @@
           }
         },
         {
-          "name": "visible",
+          "name": "scene-preview-camera",
           "props": {}
         }
       ],
