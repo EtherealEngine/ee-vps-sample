@@ -531,36 +531,14 @@
           "props": {
             "controls": false,
             "paused": false,
-            "paths": [],
             "resources": [
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/dallas.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/biglatto_bigenergy.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/zion_lvnu_low.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/aya.mp4",
-                "mediaType": "video"
-              },
-              {
-                "path": "https://resources-dev.etherealengine.com/volumetric/bones.mp4",
-                "mediaType": "video"
-              }
+              "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/dallas.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/biglatto_bigenergy.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/zion_lvnu_low.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/aya.mp4",
+              "https://resources-dev.etherealengine.com/volumetric/bones.mp4"
             ],
             "volume": 1,
             "synchronize": true,
