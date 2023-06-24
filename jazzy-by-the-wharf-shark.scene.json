@@ -532,13 +532,13 @@
             "controls": false,
             "paused": false,
             "resources": [
-              "https://resources-dev.etherealengine.com/volumetric/jazzy.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/kaelyn.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/dallas.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/biglatto_bigenergy.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/zion_lvnu_low.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/aya.mp4",
-              "https://resources-dev.etherealengine.com/volumetric/bones.mp4"
+              "https://resources-volumetric.etherealengine.com/jazzy.mp4",
+              "https://resources-volumetric.etherealengine.com/kaelyn.mp4",
+              "https://resources-volumetric.etherealengine.com/dallas.mp4",
+              "https://resources-volumetric.etherealengine.com/biglatto_bigenergy.mp4",
+              "https://resources-volumetric.etherealengine.com/zion_lvnu_low.mp4",
+              "https://resources-volumetric.etherealengine.com/aya.mp4",
+              "https://resources-volumetric.etherealengine.com/bones.mp4"
             ],
             "volume": 1,
             "synchronize": true,
